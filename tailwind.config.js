@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   darkMode: 'class', // This can be 'media' if preferred.
   // Don't add a glob below `public` as Rollup doesn't
@@ -10,7 +12,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        svelte: '#ff3e00',
+        white: colors.white,
+        gray: colors.gray,
       },
     },
   },
