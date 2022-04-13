@@ -12,7 +12,7 @@
 	let active: object = {};
 
 	export function handleKeypress(event) {
-		if (event.key === "Enter") {
+		if (event.key === "Enter" && input != "") {
 			data.update((t) => [...t, { name: input }]);
 			input = "";
 		}
@@ -20,7 +20,7 @@
 			active = todos[todos.length - 1];
 		}
 		if (event.key === "Backspace" && input === "") {
-			active = todos[todos.length - 1] = ;
+			active = todos[todos.length - 1];
 		}
 	}
 
@@ -50,5 +50,4 @@
 	type="text"
 	class="input focus:outline-none bg-gray-100 rounded pl-2 py-0.5"
 />
-asdas
 <main class="p-4 mx-auto text-center max-w-xl" />
